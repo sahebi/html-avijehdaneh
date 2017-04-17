@@ -1,0 +1,589 @@
+@font-face {
+    font-family: "iraniansans";
+    src: url(../fonts/IranianSansWeb-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "iranianserif";
+    src: url(../fonts/IranianSerifWeb-Regular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "bbcnasim";
+    src: url(../fonts/BBCNassim.eot);
+    src: url(../fonts/BBCNassim.eot?#iefix) format("embedded-opentype"), url(../fonts/BBCNassim.woff) format("woff"), url(../fonts/BBCNassim.ttf) format("truetype"), url(../fonts/BBCNassim.svg#BBCNassim) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "byekan";
+    src: url(../fonts/BYekan.eot);
+    src: url(../fonts/BYekan.eot?#iefix) format("embedded-opentype"), url(../fonts/BYekan.woff) format("woff"), url(../fonts/BYekan.ttf) format("truetype"), url(../fonts/BYekan.svg#BYekan) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "gess";
+    src: url(../fonts/GE_SS_Two_Medium.eot);
+    src: url(../fonts/GE_SS_Two_Medium.eot?#iefix) format("embedded-opentype"), url(../fonts/GE_SS_Two_Medium.woff) format("woff"), url(../fonts/GE_SS_Two_Medium.ttf) format("truetype"), url(../fonts/GE_SS_Two_Medium.svg#GE_SS_Two_Medium) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+body {
+    font-family: "iraniansans", Tahoma;
+    font-size: 12px;
+    background-color: rgba(245, 245, 245, 1);
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.row-lang {
+    height: 25px;
+    line-height: 25px;
+}
+
+.lang-box a,
+.lang-box a:hover,
+.lang-box a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
+
+.lang-box a {
+    display: block;
+}
+
+.lang-box {
+    width: 25px;
+    height: 35px;
+    line-height: 45px;
+    background-color: #006091;
+    text-align: center;
+    color: white;
+    float: left;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    top: -10px;
+}
+
+.lang-box:hover {
+    background-color: #f89f1d;
+    top: 0;
+}
+
+.lang-box::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.vendors {
+    width: auto;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
+
+.row-logo {
+    height: 220px;
+    line-height: 220px;
+    text-align: center;
+    direction: rtl;
+}
+
+.row-logo .logo {}
+
+.row-logo .logo img {
+    width: 290px;
+}
+
+.row-logo .search-box {
+    line-height: 120px;
+}
+
+.row-logo .search-box input {
+    height: 25px;
+    outline: none;
+}
+
+.menu {
+    /*#c13d00*/
+    background-color: #f89f1d;
+    font-family: "iraniansans", Tahoma;
+}
+
+.menu .phone {
+    color: white;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.menu .phone a,
+.menu .phone a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul.menu-hor {
+    list-style-type: none;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    display: block;
+}
+
+.menu ul.menu-hor>li {
+    float: right;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu ul.menu-hor>li>a {
+    z-index: 9;
+    position: relative;
+    display: block;
+    transition: all 0.5s ease;
+    color: white;
+    padding: 0 10px;
+}
+
+.menu ul.menu-hor>li+li>a {
+    border-right: 1px solid #dbb0ba;
+}
+
+.menu ul.menu-hor>li>.bg {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: all 0.5s ease;
+    /*width: 100%;*/
+}
+
+.menu ul.menu-hor>li:hover>.bg {
+    height: 30px;
+}
+
+.menu ul.menu-hor>li:hover>a {
+    color: #f89f1d;
+    text-decoration: none;
+}
+
+.menu ul.menu-hor>li>ul {
+    position: absolute;
+    top: 30px;
+    /*right: -10px;*/
+    /*display: block;*/
+    background-color: #f89f1d;
+    /*text-align: right;*/
+    /*display: none;*/
+}
+
+
+/*.menu ul.menu-hor > li:hover > ul{*/
+
+
+/*display: block;*/
+
+
+/*}*/
+
+
+/*.menu ul.menu-hor > li > ul > li > a{*/
+
+
+/*background-color: #c13d00;*/
+
+
+/*display: block;*/
+
+
+/*width: 220px;*/
+
+
+/*}*/
+
+
+/*.menu ul.menu-hor > li > ul > li > a:hover{*/
+
+
+/*color: #c13d00;*/
+
+
+/*background-color: white;*/
+
+
+/*}*/
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
+
+.news-slider {
+    background-color: #e2e2e2;
+    height: 45px;
+    line-height: 45px;
+    direction: rtl;
+    font-weight: bold;
+}
+
+.news-slider .title {
+    color: hsl(4, 66%, 46%);
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.news-slider .body {
+    width: 420px;
+}
+
+.news-slider .body a {
+    color: #78909c;
+}
+
+.news-slider .typewriter {
+    direction: rtl;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /*border-left: .15em solid orange; !* The typwriter cursor *!*/
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .15em; !* Adjust as needed *!*/
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
+
+.slider .swiper-container {
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+}
+
+.slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;
+    height: 520px;
+}
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
+
+footer.info {
+    background-color: #041f36;
+    height: 50px;
+}
+
+body>footer {
+    background-color: #1c242c;
+    color: #576879;
+    ;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    direction: rtl;
+}
+
+footer .box {
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    margin-top: 7px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+footer .box a {
+    display: block;
+}
+
+.box.google {
+    background-color: hsl(4, 66%, 46%);
+}
+
+.box.google:hover {
+    background-color: hsl(4, 96%, 46%);
+}
+
+.box.instagram {
+    background-color: hsl(206, 63%, 57%);
+}
+
+.box.instagram:hover {
+    background-color: hsl(206, 93%, 57%);
+}
+
+.box.facebook {
+    background-color: hsl(221, 59%, 33%);
+}
+
+.box.facebook:hover {
+    background-color: hsl(221, 89%, 33%);
+}
+
+.box.twitter {
+    background-color: hsl(201, 96%, 40%);
+}
+
+.box.twitter:hover {
+    background-color: hsl(201, 96%, 70%);
+}
+
+
+/* MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW */
+
+.icon-menu {
+    background-color: white;
+    font-family: "bbcnasim", tahoma;
+    height: 150px;
+    /*background-color: red;*/
+    direction: rtl;
+    margin-top: 15px;
+}
+
+.icon-menu .icon:hover {
+    box-shadow: 0 -2px 2px #eb8f07;
+}
+
+.icon+.icon {
+    border-left: 1px solid lightgray;
+}
+
+.icon-menu .icon a {
+    display: block;
+    height: 140px;
+    /*width: 100px;*/
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.6em;
+    color: #686868;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.icon-menu .icon img {
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.icon-menu .icon span {
+    display: block;
+    padding: 5px 0;
+}
+
+.icon-menu .icon:hover img {
+    opacity: 1;
+}
+
+.icon-menu .icon:hover a {
+    color: #eb8f07;
+}
+
+
+/* MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW */
+
+.section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    direction: rtl;
+}
+
+.section section>div {
+    box-shadow: 0 2px 1px rgba(200, 200, 200, 1);
+    background-color: white;
+    min-height: 240px;
+    max-height: 240px;
+    position: relative;
+    transition: box-shadow 0.2s ease;
+}
+
+.section section>div:hover {
+    box-shadow: 0 2px 1px rgba(150, 150, 150, 1);
+}
+
+.section section a {
+    color: #576879;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    transition: all 0.1s ease;
+}
+
+.section section a:hover {
+    color: #eb8f07;
+}
+
+.section section .swiper-container {
+    padding: 8px;
+}
+
+.section section ul {
+    /*list-style-type: none;*/
+    line-height: 28px;
+    padding-right: 15px;
+}
+
+.section section header {
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding-right: 10px;
+    background-color: #e2e2e2;
+    color: hsl(4, 66%, 46%);
+    text-shadow: 0 0 5px hsl(4, 100%, 95%);
+}
+
+.section section footer {
+    padding: 5px 10px;
+    font-weight: bold;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.section section footer a {
+    color: hsl(4, 66%, 46%);
+}
+
+.section section .swiper-container {
+    width: 100%;
+    height: 179px;
+    overflow: hidden;
+}
+
+.section section .swiper-container .swiper-wrapper img {
+    width: 100%;
+    height: 169px;
+    padding: 0 10px;
+}
+
+.filter-gray {
+    filter: url("data:image/svg+xml;utf8,<svg%20xmlns='http://www.w3.org/2000/svg'><filter%20id='grayscale'><feColorMatrix%20type='matrix'%20values='0.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200.3333%200.3333%200.3333%200%200%200%200%200%201%200'/></filter></svg>#grayscale");
+    filter: gray;
+    -webkit-filter: grayscale(0.7);
+    -webkit-filter: grayscale(70%);
+    filter: url(resources.svg#desaturate);
+    filter: grayscale(70%);
+    transition: all 0.3s ease;
+}
+
+.filter-gray:hover {
+    -webkit-filter: grayscale(0);
+    filter: none;
+    filter: grayscale(0) brightness(1.1);
+}
