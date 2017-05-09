@@ -160,14 +160,16 @@ body {
 
 .menu {
     /*#c13d00*/
-    background-color: #f89f1d;
-    font-family: "iraniansans", Tahoma;
+    background-color: #c13d00;
+    font-family: "byekan", Tahoma;
+    font-size: 17px;
 }
 
 .menu .phone {
     color: white;
-    font-size: 15px;
-    line-height: 28px;
+    font-family: Tahoma;
+    font-size: 19px;
+    line-height: 45px;
 }
 
 .menu .phone a,
@@ -179,8 +181,8 @@ body {
 .menu ul.menu-hor {
     list-style-type: none;
     padding: 0;
-    height: 30px;
-    line-height: 30px;
+    height: 45px;
+    line-height: 45px;
     margin: 0 auto;
     display: block;
 }
@@ -217,11 +219,11 @@ body {
 }
 
 .menu ul.menu-hor>li:hover>.bg {
-    height: 30px;
+    height: 45px;
 }
 
 .menu ul.menu-hor>li:hover>a {
-    color: #f89f1d;
+    color: #c13d00;
     text-decoration: none;
 }
 
@@ -230,7 +232,7 @@ body {
     top: 30px;
     /*right: -10px;*/
     /*display: block;*/
-    background-color: #f89f1d;
+    background-color: #c13d00;
     /*text-align: right;*/
     /*display: none;*/
 }
@@ -280,6 +282,7 @@ body {
     line-height: 45px;
     direction: rtl;
     font-weight: bold;
+    font-size: 16px;
 }
 
 .news-slider .title {
@@ -339,7 +342,7 @@ body {
 
 .slider .swiper-container {
     width: 100%;
-    height: 250px;
+    height: 340px;
     background-color: gray;
 }
 
@@ -451,8 +454,10 @@ footer .box a {
 }
 
 .icon-menu .icon:hover {
-    box-shadow: 0 -2px 2px #eb8f07;
+    box-shadow: 0 -2px 1px #c13d00;
 }
+
+.icon-menu .icon:hover img {}
 
 .icon+.icon {
     border-left: 1px solid lightgray;
@@ -472,7 +477,7 @@ footer .box a {
 }
 
 .icon-menu .icon img {
-    opacity: 0.4;
+    /*opacity: 0.4;*/
     transition: all 0.3s ease;
 }
 
@@ -486,7 +491,7 @@ footer .box a {
 }
 
 .icon-menu .icon:hover a {
-    color: #eb8f07;
+    color: #c13d00;
 }
 
 
@@ -520,7 +525,7 @@ footer .box a {
 }
 
 .section section a:hover {
-    color: #eb8f07;
+    color: #c13d00;
 }
 
 .section section .swiper-container {
@@ -529,8 +534,9 @@ footer .box a {
 
 .section section ul {
     /*list-style-type: none;*/
-    line-height: 28px;
-    padding-right: 15px;
+    line-height: 25px;
+    padding-right: 25px;
+    font-size: 15px;
 }
 
 .section section header {
@@ -586,4 +592,60 @@ footer .box a {
     -webkit-filter: grayscale(0);
     filter: none;
     filter: grayscale(0) brightness(1.1);
+}
+
+
+/*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
+
+nav.avij {
+    background-color: #c13d00;
+    font-family: "byekan", Tahoma;
+    font-size: 17px;
+}
+
+.avij-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+.avij-menu>li {
+    display: inline-block;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+}
+
+.avij-menu>li+li {
+    border-right: 1px solid #dbb0ba;
+}
+
+.avij-menu>li>ul {
+    position: absolute;
+    right: 0;
+    background-color: #9e3200;
+    width: 220px;
+    list-style-type: none;
+    display: none;
+    z-index: 9999999;
+    box-shadow: 0 1px 1px #8f2d00;
+    padding: 0;
+    margin: 0;
+}
+
+.avij-menu>li:hover>ul {
+    display: block;
+}
+.avij-menu>li:hover>ul>li{
+    padding: 0 10px;
+}
+.avij-menu>li:hover>ul>li:hover{
+    background-color: #c13d00;
+}
+.avij-menu a,
+.avij-menu a:hover {
+    color: white;
+    text-decoration: none;
 }
