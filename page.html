@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>آویژه دانه</title>
 
-    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/css/bootstrap.css" rel="stylesheet">
     <link href="lib/swiper/css/swiper.min.css" rel="stylesheet">
 
-    <link href="lib/css/main.css" rel="stylesheet">
+    <link href="lib/css/main.css?v=2" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,6 +18,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="gallery-slider/css/slider.css" rel="stylesheet">
+
+    <script src="lib/js/jquery.min.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +36,7 @@
         </div>
     </div>-->
 
-    <!-- menu ------------------------------------------------------------------ -->
+    <!-- menu MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
     <div class="container-fluid menu">
         <div class="row">
             <div class="col-md-12">
@@ -44,10 +49,15 @@
                             </a>
                         </div>
                         <div class="col-md-10">
-                            <ul class="menu-hor">
+                            <ul class="avij-menu">
                                 <li>
                                     <a href="#">صفحه اصلی</a>
                                     <div class="bg"></div>
+                                    <ul>
+                                        <li><a href="#">LINK</a></li>
+                                        <li><a href="#">LINK</a></li>
+                                        <li><a href="#">LINK</a></li>
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#">درباره ما</a>
@@ -55,6 +65,15 @@
                                 </li>
                                 <li>
                                     <a href="#">محصولات</a>
+                                    <div class="bg"></div>
+                                    <ul>
+                                        <li><a href="#">LINK</a></li>
+                                        <li><a href="#">LINK</a></li>
+                                        <li><a href="#">LINK</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">قیمت محصولات</a>
                                     <div class="bg"></div>
                                 </li>
                                 <li>
@@ -70,14 +89,6 @@
                                     <div class="bg"></div>
                                 </li>
                                 <li>
-                                    <a href="#">نمایشگاه ها</a>
-                                    <div class="bg"></div>
-                                </li>
-                                <li>
-                                    <a href="#">همایش ها</a>
-                                    <div class="bg"></div>
-                                </li>
-                                <li>
                                     <a href="#">ارتباط با ما</a>
                                     <div class="bg"></div>
                                 </li>
@@ -89,152 +100,70 @@
         </div>
     </div>
     <div class="clearfix"></div>
-    <!-- /menu ------------------------------------------------------------------ -->
+    <!-- /menu MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
 
-    <!-- slider ------------------------------------------------------------------ -->
+    <!-- slider MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
     <div class="container-fluid slider">
         <div class="row">
             <div class="swiper-container">
-                <div class="parallax-bg" style="background-image:url(http://lorempixel.com/900/600/nightlife/2/)" data-swiper-parallax="-23%"></div>
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/avijehdaneh.jpg" alt="xxx"></div>
-                    <div class="swiper-slide"><img src="images/zemanatname.jpg"></div>
-                    <div class="swiper-slide"><img src="images/star.jpg"></div>
-                    <div class="swiper-slide"><img src="images/fair.jpg"></div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="images/avijehdaneh.jpg" alt="xxx">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="images/zemanatname.jpg" alt="xxx">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="images/star.jpg" alt="xxx">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img src="images/fair.jpg" alt="xxx">
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-button-prev swiper-button-white"></div>
                 <div class="swiper-button-next swiper-button-white"></div>
             </div>
         </div>
     </div>
-    <!-- /slider ------------------------------------------------------------------ -->
+    <div class="clearfix"></div>
+    <!-- /slider MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
 
-    <!-- header ------------------------------------------------------------------ -->
-    <!--<div class="clearfix"></div>
-    <div class="container row-logo">
+    <!-- section MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
+    <div class="container article">
         <div class="row">
-            <div class="col-md-12 logo">
-                <img src="images/avijeh-daneh-logo.png" alt="xxx">
-            </div>
-        </div>
-    </div>-->
-    <!-- /header ------------------------------------------------------------------ -->
-
-    <!-- icon menu ------------------------------------------------------------------ -->
-    <div class="container-fluid icon-menu">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-md-2 icon">
-                            <a href="#" class="">
-                                <img src="images/icon-si.jpg" alt="xxx">
-                                <span>دوره بیماری</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 icon">
-                            <a href="#" class="">
-                                <img src="images/icon-calf.png" alt="xxx">
-                                <span>گوساله پرواری</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 icon">
-                            <a href="#" class="">
-                                <img src="images/icon-dairy-cow.jpg" alt="xxx">
-                                <span>گاو شیری</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 icon">
-                            <a href="#" class="">
-                                <img src="images/icon-ostrich.jpg" alt="xxx">
-                                <span>شترمرغ</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 icon">
-                            <a href="#" class="">
-                                <img src="images/icon-sheep.jpg" alt="xxx">
-                                <span>گوسفند</span>
-                            </a>
-                        </div>
-                        <div class="col-md-2 icon">
-                            <a href="#" class="">
-                                <img src="images/icon-chicken.jpg" alt="xxx">
-                                <span>مرغ گوشتی</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /container -->
-            </div>
-        </div>
-    </div>
-    <!-- /icon menu ------------------------------------------------------------------ -->
-
-    <!-- news slider ------------------------------------------------------------------ -->
-    <div class="container-fluid news-slider">
-        <div class="row">
-            <div class="container">
-                <div class="row rtl">
-                    <div class="pull-right title">آخرین اخبارها: </div>
-                    <div class="pull-right body">
-                        <div class="typewriter"><a href="#">آخرین اخبار مربوط به مجموعه سازمانی</a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- /news slider ------------------------------------------------------------------ -->
-
-
-    <!-- section ------------------------------------------------------------------ -->
-    <div class="container section">
-        <div class="row">
-            <section class="col-md-4 gallery">
-                <div>
+            <section class="col-md-8 col-md-push-0">
                     <header>
-                        گالری تصاویر
+                        <i class="glyphicon glyphicon-align-right"></i>
+                        عنوان خبر
                     </header>
-                    <div class="dis-filter-gray swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img class="img" src="images/gallery-1.jpg" alt="xxx"></div>
-                            <div class="swiper-slide"><img class="img" src="images/gallery-2.jpg" alt="xxx"></div>
-                            <div class="swiper-slide"><img class="img" src="images/gallery-3.jpg" alt="xxx"></div>
-                        </div>
-                        <div class="swiper-button-prev swiper-button-white"></div>
-                        <div class="swiper-button-next swiper-button-white"></div>
-                    </div>
-                    <footer>
-                        <a href="#">گالری تصاویر</a>
-                    </footer>
-                </div>
+                    <article class="dis-filter-gray">
+                        تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست 
+                    </article>
             </section>
-
-            <section class="col-md-8">
-                <div>
+            <section class="col-md-4">
                     <header>
-                        مقالات
+                        <i class="glyphicon glyphicon-align-justify"></i>
+                        خبرها
                     </header>
-                    <ul>
-                        <li><a href="#">کنترل بیماری های بهاره</a></li>
-                        <li><a href="#">افزایش وزن دام با کنترل روشنایی</a></li>
-                        <li><a href="#">تاثیر تغذیه مناسب در افزایش بهره وری گله ها</a></li>
-                        <li><a href="#">تاثیر تغذیه مناسب در افزایش بهره وری گله ها</a></li>
-                        <li><a href="#">تاثیر تغذیه مناسب در افزایش بهره وری گله ها</a></li>
-                        <li><a href="#">تاثیر تغذیه مناسب در افزایش بهره وری گله هابهره وری گله هابهره وری گله ها</a></li>
-                    </ul>
-                    <footer>
-                        <a href="#">تمام مقالات</a>
-                    </footer>
-                </div>
+                    <article class="dis-filter-gray">
+                        تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست تست 
+                    </article>
             </section>
-
         </div>
     </div>
-    <!-- /section ------------------------------------------------------------------ -->
+    <div class="clearfix"></div>
+    <!-- /section MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
 
-    <!-- footer ------------------------------------------------------------------ -->
+    <!-- footer MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
     <footer class="info">
-
     </footer>
     <footer>
         <div class="container">
@@ -260,14 +189,11 @@
             </div>
         </div>
     </footer>
-    <!-- /footer ------------------------------------------------------------------ -->
-
-
-    <script src="lib/js/jquery.min.js"></script>
-    <script src="lib/js/bootstrap.min.js"></script>
+    <!-- /footer MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
     <script src="lib/swiper/js/swiper.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
+            zoom: true,
             pagination: '.swiper-pagination',
             paginationClickable: true,
             nextButton: '.swiper-button-next',

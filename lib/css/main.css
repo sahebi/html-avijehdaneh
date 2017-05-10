@@ -236,8 +236,16 @@ body {
     /*text-align: right;*/
     /*display: none;*/
 }
-
-
+.menu-hor >li{
+    position: relative;
+}
+.menu-hor > li > ul {
+    background-color: red;
+    z-index: 999999;
+    position: absolute;
+    bottom: 0;
+    /*display: none;*/
+}
 /*.menu ul.menu-hor > li:hover > ul{*/
 
 
@@ -282,61 +290,40 @@ body {
     line-height: 45px;
     direction: rtl;
     font-weight: bold;
-    font-size: 16px;
+
+    font-family: "byekan", Tahoma;
+    font-size: 17px;
+
 }
 
 .news-slider .title {
     color: hsl(4, 66%, 46%);
     font-weight: bold;
     padding-left: 5px;
+    font-size: 15pt;
 }
 
 .news-slider .body {
-    width: 420px;
+    width: 1020px;
+    position: relative;
 }
 
 .news-slider .body a {
-    color: #78909c;
+    color: #000;
+    display: block;
+    transition: all 0.5s ease;
 }
-
-.news-slider .typewriter {
-    direction: rtl;
-    overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
-    /*border-left: .15em solid orange; !* The typwriter cursor *!*/
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    /*letter-spacing: .15em; !* Adjust as needed *!*/
-    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+.news-slider .body a:hover {
+    color: hsl(4, 66%, 46%);
 }
-
-
-/* The typing effect */
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-    to {
-        width: 100%
-    }
+.news-slider .body .typewrite {
+    display: none;
+    font-size: 13pt;
+    position: absolute;
+    background-color: #e2e2e2;
+    width: 100%;
+    font-weight: initial;
 }
-
-
-/* The typewriter cursor effect */
-
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent
-    }
-    50% {
-        border-color: orange;
-    }
-}
-
 
 /*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
 
@@ -503,7 +490,7 @@ footer .box a {
     direction: rtl;
 }
 
-.section section>div {
+.section section > div {
     box-shadow: 0 2px 1px rgba(200, 200, 200, 1);
     background-color: white;
     min-height: 240px;
@@ -597,7 +584,7 @@ footer .box a {
 
 /*MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW*/
 
-nav.avij {
+.avij {
     background-color: #c13d00;
     font-family: "byekan", Tahoma;
     font-size: 17px;
@@ -625,27 +612,120 @@ nav.avij {
 .avij-menu>li>ul {
     position: absolute;
     right: 0;
+    top: 45px;
     background-color: #9e3200;
     width: 220px;
     list-style-type: none;
-    display: none;
     z-index: 9999999;
     box-shadow: 0 1px 1px #8f2d00;
+    border-bottom: 2px solid #8f2d00;
     padding: 0;
     margin: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+
+    border-radius: 0 0 5px 5px;
 }
 
 .avij-menu>li:hover>ul {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
-.avij-menu>li:hover>ul>li{
+.avij-menu>li>ul>li{
     padding: 0 10px;
 }
 .avij-menu>li:hover>ul>li:hover{
     background-color: #c13d00;
 }
+.avij-menu>li>ul>li a{
+    display: block;
+}
 .avij-menu a,
 .avij-menu a:hover {
     color: white;
     text-decoration: none;
+}
+
+.avij-menu > li > .bg {
+    background-color: #9e3200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: all 0.5s ease;
+}
+
+.avij-menu>li:hover>.bg {
+    height: 45px;
+}
+
+.avij-menu>li:hover>a {
+    text-decoration: none;
+}
+.avij-menu>li>a {
+    z-index: 9;
+    position: relative;
+    display: block;
+    transition: all 0.5s ease;
+    color: white;
+}
+
+.details-container
+{
+    height: 690px;   
+}
+.detail-excerpt{
+    font-family: "byekan" !important;
+    font-weight: initial !important;
+    font-size: 19px !important;
+}
+.the-heading{
+    font-family: "byekan", Tahoma;
+    font-size: 23px;
+    color: #c13d00 !important;
+}
+
+
+.article{
+    font-family: "bbcnasim", Tahoma;
+    font-size: 18px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    direction: rtl;
+    line-height: 25px;
+}
+.article header{
+    font-family: "byekan", Tahoma;
+    height: 45px;
+    line-height: 45px;
+    font-size: 19px;
+    color: white;
+    background-color: #c13d00;
+    border-radius: 5px 5px 0 0;
+    padding: 0 10px;
+}
+.article article{
+    background-color: white;
+    padding: 15px;
+    line-height: 30px;
+    box-shadow: 0 1px 1px #444444;
+}
+.article article.box{
+    box-shadow: 0 0 1px #444444;
+}
+.gallery{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    overflow: auto;
+}
+.gallery li{
+    height: 240px;
+    width: 120px;
+    float: left;
 }

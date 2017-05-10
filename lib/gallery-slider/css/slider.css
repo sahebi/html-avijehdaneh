@@ -2,11 +2,13 @@
   margin-bottom: 30px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  }
   .zoomtimeline * {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+
   .zoomtimeline .items {
     opacity: 0;
     visibility: hidden;
@@ -851,33 +853,37 @@
     -o-transition-timing-function: ease-out;
     transition-timing-function: ease-out; }
     .zoomtimeline.mode-3dslider .details-container > .detail {
-      position: absolute;
-      text-align: center;
-      width: 300px;
-      top: 0;
-      visibility: visible;
-      opacity: 1;
-      left: 50%;
-      margin-left: -150px;
-      transition-property: all;
-      transition-duration: 0.25s;
-      -moz-transition-property: all;
-      -moz-transition-duration: 0.25s;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: 0.25s;
-      -o-transition-property: all;
-      -o-transition-duration: 0.25s;
-      -ms-transition-property: all;
-      -ms-transition-duration: 0.25s;
-      -ms-transition-timing-function: ease-out;
-      -webkit-transition-timing-function: ease-out;
-      -moz-transition-timing-function: ease-out;
-      -o-transition-timing-function: ease-out;
-      transition-timing-function: ease-out;
-      transform: translate3d(0, 0, 0);
-      -webkit-transform: translate3d(0, 0, 0);
-      perspective: 600px;
-      -webkit-perspective: 600px; }
+        position: absolute;
+        text-align: center;
+        width: 300px;
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        left: 50%;
+        margin-left: -150px;
+
+        transition-property: all;
+        transition-duration: 0.25s;
+        -moz-transition-property: all;
+        -moz-transition-duration: 0.25s;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0.25s;
+        -o-transition-property: all;
+        -o-transition-duration: 0.25s;
+        -ms-transition-property: all;
+        -ms-transition-duration: 0.25s;
+        -ms-transition-timing-function: ease-out;
+        -webkit-transition-timing-function: ease-out;
+        -moz-transition-timing-function: ease-out;
+        -o-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+
+        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+
+        perspective: 400px;
+        -webkit-perspective: 400px;
+      }
       .zoomtimeline.mode-3dslider .details-container > .detail .detail-image-con {
         position: relative;
         transform: rotateY(0deg) scale(1) translate3d(0, 0, 0);
@@ -944,7 +950,7 @@
         padding-top: 60px;
         opacity: 0;
         visibility: hidden;
-        color: #ffffff;
+        color: #000;
         margin-left: -10%;
         margin-right: -10%;
         transition-property: opacity, visibility;
