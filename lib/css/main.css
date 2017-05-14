@@ -729,3 +729,11 @@ footer .box a {
     width: 120px;
     float: left;
 }
+
+
+.ms-grid .ms-item img{
+    height: 150px;
+    display: inline-block;
+    padding: 5px 5px;
+    vertical-align: top;
+}
