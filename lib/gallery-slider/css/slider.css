@@ -921,8 +921,8 @@
         transition-timing-function: ease-out; }
       .zoomtimeline.mode-3dslider .details-container > .detail .detail-image, .zoomtimeline.mode-3dslider .details-container > .detail .detail-image--border {
         position: relative;
-        width: 100%;
-        height: 400px;
+        width: 439px;
+        height: 169px;
         border-radius: 5px;
         background-size: cover;
         background-position: center center; }
@@ -1007,7 +1007,7 @@
         position: absolute;
         width: 100%;
         text-align: center;
-        top: 258px;
+        top: 140px;
         width: 100%;
         text-align: center;
         font-size: 14px;
@@ -1087,7 +1087,7 @@
         opacity: 1;
         visibility: visible;
         position: absolute;
-        top: 477px;
+        top: 250px;
         width: 100%;
         text-align: center;
         font-size: 25px; }

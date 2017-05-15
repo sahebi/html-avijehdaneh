@@ -162,7 +162,7 @@ body {
     /*#c13d00*/
     background-color: #c13d00;
     font-family: "byekan", Tahoma;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .menu .phone {
@@ -675,7 +675,7 @@ footer .box a {
 
 .details-container
 {
-    height: 690px;   
+    min-height: 625px; 
 }
 .detail-excerpt{
     font-family: "byekan" !important;
