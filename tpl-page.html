@@ -1,0 +1,58 @@
+[[$_header]]
+<body>
+     <!-- A0 -->
+     [[$tpl_01_header]]
+     <!-- A -->
+     [[$tpl_02_slider]] 
+
+    <!-- section MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
+    <div class="container article">
+        <div class="row">
+            <section class="col-md-8 col-md-push-0">
+                    <header>
+                        <i class="glyphicon glyphicon-align-right"></i>
+                        [[*pagetitle]]
+                    </header>
+                    <article class="dis-filter-gray">
+                        <ul>
+                            [[!getResources? &parents=`[[*id]]` &tpl=`gr_li` &includeTVs=`1` &depth=`0` &limit=`10` &sortby=`{"menuindex":"ASC","createdon":"DESC"}` ]]
+                        </ul>
+                        [[*tv.icon]]
+                        [[*content]]
+                    </article>
+            </section>
+            <section class="col-md-4">
+                    <header>
+                        <i class="glyphicon glyphicon-align-justify"></i>
+                        لیست
+                    </header>
+                    <article class="dis-filter-gray">
+                        <ul>
+                            [[!getResources? &parents=`[[*parent]]` &tpl=`gr_li` &includeTVs=`1` &depth=`0` &limit=`10` &sortby=`{"menuindex":"ASC","createdon":"DESC"}` ]]
+                        </ul>
+                    </article>
+            </section>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- /section MWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMWMW -->
+
+     <!-- A4 -->
+     [[$tpl_06_footer_info]] 
+     <!-- A5 -->
+     [[$tpl_07_footer]]
+     <!-- A6 -->
+    <script src="lib/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            zoom: true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            parallax: true,
+            speed: 600,
+        });
+    </script>
+</body>
+</html>

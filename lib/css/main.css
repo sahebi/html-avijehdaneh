@@ -362,16 +362,16 @@ body {
 
 footer.info {
     background-color: #041f36;
-    height: 50px;
+    /*height: 50px;*/
 }
 
 body>footer {
     background-color: #1c242c;
     color: #576879;
-    ;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+    padding: 5px 0;
+    /*text-align: center;*/
     font-weight: bold;
     direction: rtl;
 }
@@ -731,9 +731,34 @@ footer .box a {
 }
 
 
-.ms-grid .ms-item img{
+.ms-grid .ms-item .image-info{
     height: 150px;
     display: inline-block;
     padding: 5px 5px;
+    margin: 5px 0;
     vertical-align: top;
+    position: relative;
+}
+.ms-grid .ms-item img{
+    height: 150px;
+}
+
+.ms-grid .ms-item .image-info .image-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(10,10,10,0.5);
+    color: white;
+    /*display: none;*/
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.ms-grid .ms-item .image-info:hover .image-desc{
+    visibility: visible;
+    opacity: 1;
 }
